@@ -14,8 +14,16 @@
 \begin{enumerate}
 	\item[Q1:]为什么论文编译出来的.pdf文件中所有超链接都带有颜色？
 	\item[A1:]方便调试的时候区分超链接和普通文本，在main.tex文件中可以修改，详情见代码注释。
-	\item[Q2:]
-	\item[A2:]
+	\item[Q2:]Windows端采用CTex发行版进行论文撰写，使用内置的WinEdt编辑器打开main.tex文件时出现如图\ref{Q151208_1_Yang}所示的报错问题。(\textbf{问题来源}：西南交通大学电气学院杨鸣凯博士，15年12月8日)
+	\begin{figure}[htbp]
+		\centering
+		\includegraphics[width=4in]{figures/QA/Q151208_1_Yang.png}
+		\caption{WinEdt打开main.tex报错}
+		\label{Q151208_1_Yang}
+	\end{figure}
+	\item[A2:]本问题是由WinEdt编辑器内部的打开编码与模板编码不统一导致。由于swjtuThesis模板本身以及所使用的~\BibTeX{}~参考文献库均采用的是UTF-8编码。\textbf{解决办法}：在WinEdt中：点击\verb|File - Open|，然后找到main.tex文件，在右下角的编码选择处选择UTF-8，打开即可。
+	\item[Q3:]
+	\item[A3:]
 \end{enumerate}
 
 \subsection{排版问题}
